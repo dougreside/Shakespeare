@@ -1,0 +1,107 @@
+.title {
+	font-weight: bold;
+}
+
+.speaker {
+	font-weight: bold;
+	display: block;
+	padding-right: 1em;
+}
+
+.inner_stage {
+	font-style: italic;
+	display: inline;
+}
+
+.deleted {
+	text-decoration: line-through;
+}
+
+.outer_stage {
+	font-style: italic;
+	padding-bottom: 1ex;
+}
+
+.p {
+	display: block;
+}
+
+
+
+.playtext {
+	width: 400px;
+	padding-left: 5px;
+	margin-left:50px
+}
+
+.em{
+	font-style: italic;
+}
+.userNote{
+background-color: cyan;
+}
+.TOC {
+	width: 400px;
+	padding-left: 5px;
+}
+
+.head {
+	font-weight: bold;
+	padding-bottom: 1ex;
+	padding-top: 2ex;
+}
+
+a.ref_line {
+
+	float: right;
+	margin-right: 2em;
+
+}
+
+a.activeRow {
+	background-color: red;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.print_tln {
+	float: right;
+}
+
+.stage {
+	font-style: italic;
+}
+
+.align-right {
+	float: right;
+	padding-right: 5ex;
+}
+
+.align-center {
+	text-align: center;
+}
+.highlight{
+	background-color:rgba(255,255,0,0.75);;
+}
+
+.mapName{
+	background: rgba(255,0,0,0.25);
+	cursor: pointer;
+}
+.mapName:hover {
+	background: rgba(255,0,0,0.35);
+}
+#mycarousel {
+	height: 225px;
+	width: 500px;
+}
+em{
+	font-style:italic;
+}
+.imgBox{
+ overflow:auto;	
+ height: 270px;
+	width: 515px;
+}

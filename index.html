@@ -1,0 +1,128 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='./css/TEI_css.css' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="./js/libs/jquery.fancybox-1.3.4.css"></link>
+
+	<link rel="icon" type="image/ico" href="/favicon.ico"/>
+
+<script type="text/javascript" src="./js/libs/jquery-1.7.2.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="./js/libs/underscore-min.js"></script>
+<script type="text/javascript" src="./js/libs/rangy-1.2.3/rangy-core.js"></script>
+<script type="text/javascript" src="./js/libs/jquery.fancybox-1.3.4.js"></script>
+
+<script type="text/javascript" src="./js/nvs-script.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34497559-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div id="container" role="main">
+	<header>
+		<a id="logo" href="index.html"><img src="img/coe_logo.png" alt="Comedy of Errors Logo" /></a>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="howto.html">How to Use</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="main">
+		<div id="book">
+			<div id="page">
+			</div>
+			<div id="progress_container">
+				<a id="prev"></a>
+				<a id="next"></a>
+				<p id="page_count">Page <span id="page_number">1</span> of <span id="total_pages">149</span></p>
+				<div id="progress">
+					<div id="progress_bar"></div>
+					<div id="progress_seek"></div>
+					<ul id="progress_line">
+					</ul>
+					<div id="progress_preview">
+					</div>
+				</div>
+			</div>
+			
+			<a id="pageflip"></a>
+		</div>
+		<div id="media_tabs">
+			<ul>
+				<li><a id="tab_image" class="tab disabled"><img src="img/icon_image.png" alt="Images" title="Images" /><span>0</span></a></li>
+				<li><a id="tab_audio" class="tab disabled"><img src="img/icon_audio.png" alt="Audio" title="Audio" /><span>0</span></a></li>
+				<li><a id="tab_video" class="tab disabled"><img src="img/icon_video.png" alt="Video" title="Video" /><span>0</span></a></li>
+				<li><a id="tab_map" class="tab inactive"><img src="img/icon_map.png" alt="Map" title="Map" /></a></li>
+				<li><a id="tab_book" class="tab inactive"><img src="img/icon_book.png" alt="Book" title="Book" /></a></li>
+			</ul>
+		</div>
+		<div id="media">
+			<div id="media_frame">
+				<div id="frame_tab_image">	
+				<table id="image_list" class="media_list">
+					</table>
+				</div>
+				<div id="frame_tab_audio">
+					<table id="audio_list" class="media_list">
+					</table>
+				</div>
+				<div id="frame_tab_video">
+					<table id="video_list" class="media_list">
+					</table>
+				</div>
+				<div id="frame_tab_map">
+					<img id="map" src="img/map.png" alt="Map" />
+					<a id='mapPin' class='map_pin'></a>
+				</div>
+				<div id="frame_tab_book">
+					<ul class="jcarousel-skin-ie7" id="mycarousel"></ul>
+				</div>
+			</div>
+		</div>
+		<div id="footnotes">
+			<div id="footnotes_list">
+				<table>			
+				</table>
+			</div>
+			<div id="footnotes_text">
+			</div>
+		</div>
+		<div id="annotations">
+			<div class="annoContent"></div>
+			<a class="button" id="annotations_login">Login with Google Account</a>	
+			<a class="button" id="annotations_logout">Signout</a>	
+		</div>
+	</div>
+	<footer>
+		<p>Created by <a href="mailto:dougreside@gmail.com">Doug Reside</a> and <a href="mailto:gplord@gmail.com">Gregory Lord</a> for the New Variorum Challenge 2012.</p>
+	</footer>
+</div>
+
+<script src="./assets/commentary.js"></script>
+<script src="./assets/FolioImages.js"></script>
+<script src="./assets/pages.json"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+  <script async="" defer="" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()" src="https://apis.google.com/js/api.js"></script>
+ 
+</body>
+</html>
