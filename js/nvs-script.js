@@ -40,7 +40,7 @@ function initClient() {
         authorizeButton.onclick = handleAuthClick;
         signoutButton.onclick = handleSignoutClick;
         }).catch(function(err){
-        alert(err);
+        console.log(err);
         gapi.auth2.getAuthInstance().signOut();
         });
         
@@ -85,7 +85,7 @@ function initClient() {
        *  Sign out the user upon button click.
        */
       function handleSignoutClick(event) {
-        alert("DING");
+        console.log("DING");
         gapi.auth2.getAuthInstance().signOut();
       }
 
@@ -446,7 +446,7 @@ if (firstRun){
     		then(function(resp){console.log("DONE--"+JSON.stringify(resp.result));noteSpreadsheetId=resp.result.spreadsheetId;
     		updateValues(noteSpreadsheetId, "A1:E1", "USER_ENTERED", [["timestamp","line","label","lemma","value"]], createAppFile);
     		}).
-    		catch(function(err){alert(err);});
+    		catch(function(err){console.log(err);});
     		 
     		
 }
